@@ -61,7 +61,7 @@ const CreatePost = () => {
     const handleCreatePost = async () => {
         setLoading(true)
         try {
-            const res = await fetch('https://threads-backend-qa7c.onrender.com/api/posts/create', {
+            const res = await fetch('https://threadsclone-project.onrender.com/api/posts/create', {
                 method:"POST",
                 headers: {
                     "Content-Type": "application/json",

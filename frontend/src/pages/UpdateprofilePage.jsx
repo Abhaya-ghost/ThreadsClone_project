@@ -41,7 +41,7 @@ const UpdateprofilePage = () => {
         if (updating) return;
 		setUpdating(true);
         try {
-            const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/users/update/${user._id}`, {
+            const res = await fetch(`https://threadsclone-project.onrender.com/api/users/update/${user._id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

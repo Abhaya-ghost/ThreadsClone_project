@@ -21,7 +21,7 @@ function Post({ post, postedBy }) {
     useEffect(() => {
         const getUser = async () => {
             try {
-                const res = await fetch('https://threads-backend-qa7c.onrender.com/api/users/profile/' + postedBy,{
+                const res = await fetch('https://threadsclone-project.onrender.com/api/users/profile/' + postedBy,{
                     headers: {
                         'Authorization': JSON.parse(token)
                     },
@@ -45,7 +45,7 @@ function Post({ post, postedBy }) {
             e.preventDefault()
             if(!window.confirm('Are you sure you want to delete this post?')) return;
 
-            const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/posts/${post._id}`, {
+            const res = await fetch(`https://threadsclone-project.onrender.com/api/posts/${post._id}`, {
                 method: "DELETE",
                 headers: {
                     'Authorization': JSON.parse(token)

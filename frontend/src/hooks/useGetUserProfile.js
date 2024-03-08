@@ -13,7 +13,7 @@ const useGetUserProfile = () => {
         const getUser = async () => {
             setLoading(true)
             try {
-                const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/users/profile/${username}`, {
+                const res = await fetch(`https://threadsclone-project.onrender.com/api/users/profile/${username}`, {
                     headers: {
                         'Authorization': JSON.parse(token)
                     },

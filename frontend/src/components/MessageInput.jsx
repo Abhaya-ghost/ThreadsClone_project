@@ -32,7 +32,7 @@ const MessageInput = ({ setMessages }) => {
 		setIsSending(true)
 
 		try {
-			const res = await fetch('https://threads-backend-qa7c.onrender.com/api/message', {
+			const res = await fetch('https://threadsclone-project.onrender.com/api/message', {
 				method: "POST",
 				headers: {
                     "Content-Type": "application/json",

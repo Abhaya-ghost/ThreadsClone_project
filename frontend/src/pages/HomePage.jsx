@@ -21,7 +21,7 @@ function HomePage() {
       setLoading(true)
       setPosts([])
       try {
-        const res = await fetch('https://threads-backend-qa7c.onrender.com/api/posts/feed',{
+        const res = await fetch('https://threadsclone-project.onrender.com/api/posts/feed',{
           headers: {
               'Authorization': JSON.parse(token)
           },

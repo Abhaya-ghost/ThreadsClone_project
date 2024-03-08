@@ -50,7 +50,7 @@ const ChatPage = () => {
         const getConvo = async () => {
             setLoadingConvo(true)
             try {
-                const res = await fetch('https://threads-backend-qa7c.onrender.com/api/message/conversations',{
+                const res = await fetch('https://threadsclone-project.onrender.com/api/message/conversations',{
                     headers: {
                         'Authorization': JSON.parse(token)
                     },
@@ -75,7 +75,7 @@ const ChatPage = () => {
         e.preventDefault()
         setSearchingUser(true)
         try {
-            const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/users/profile/${searchText}`,{
+            const res = await fetch(`https://threadsclone-project.onrender.com/api/users/profile/${searchText}`,{
                 headers: {
                     'Authorization': JSON.parse(token)
                 },

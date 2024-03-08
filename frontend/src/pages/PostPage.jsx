@@ -29,7 +29,7 @@ function PostPage() {
 		const getPost = async () => {
 			setPosts([]);
 			try {
-				const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/posts/${pid}`, {
+				const res = await fetch(`https://threadsclone-project.onrender.com/api/posts/${pid}`, {
 					headers: {
 						'Authorization': JSON.parse(token)
 					},
@@ -51,7 +51,7 @@ function PostPage() {
 		try {
 			if (!window.confirm("Are you sure you want to delete this post?")) return;
 
-			const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/posts/${currentPost._id}`, {
+			const res = await fetch(`https://threadsclone-project.onrender.com/api/posts/${currentPost._id}`, {
 				method: "DELETE",
 				headers: {
 					'Authorization': JSON.parse(token)

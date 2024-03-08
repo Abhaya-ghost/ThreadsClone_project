@@ -30,7 +30,7 @@ function UserHeader({ user }) {
 		}
 		setUpdating(true)
 		try {
-			const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/users/follow/${user._id}`, {
+			const res = await fetch(`https://threadsclone-project.onrender.com/api/users/follow/${user._id}`, {
 				method: "POST",
 				headers: {
                     "Content-Type": "application/json",

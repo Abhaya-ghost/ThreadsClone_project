@@ -36,7 +36,7 @@ function SignupCard() {
 
     const handleSignup = async() =>{
         try {
-            const res = await fetch('https://threads-backend-qa7c.onrender.com/api/users/signup', {
+            const res = await fetch('https://threadsclone-project.onrender.com/api/users/signup', {
                 method:"POST",
                 headers : {
                     "Content-Type":"application/json",

@@ -21,7 +21,7 @@ function Actions({ post }) {
         if (isLiking) return
         setIsLiking(true)
         try {
-            const res = await fetch('https://threads-backend-qa7c.onrender.com/api/posts/like/' + post._id, {
+            const res = await fetch('https://threadsclone-project.onrender.com/api/posts/like/' + post._id, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -63,7 +63,7 @@ function Actions({ post }) {
         if (isReplying) return
         setIsReplying(true)
         try {
-            const res = await fetch('https://threads-backend-qa7c.onrender.com/api/posts/reply/' + post._id, {
+            const res = await fetch('https://threadsclone-project.onrender.com/api/posts/reply/' + post._id, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

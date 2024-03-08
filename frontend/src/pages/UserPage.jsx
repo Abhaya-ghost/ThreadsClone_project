@@ -22,7 +22,7 @@ function UserPage() {
     const getPosts = async () => {
       setFetchPosts(true)
       try {
-        const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/posts/user/${username}`, {
+        const res = await fetch(`https://threadsclone-project.onrender.com/api/posts/user/${username}`, {
           headers: {
             'Authorization': JSON.parse(token)
           },

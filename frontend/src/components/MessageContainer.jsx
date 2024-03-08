@@ -91,7 +91,7 @@ const MessageContainer = () => {
             setMessages([])
             try {
                 if(selectedConvo.mock) return
-                const res = await fetch(`https://threads-backend-qa7c.onrender.com/api/message/${selectedConvo.userId}`,{
+                const res = await fetch(`https://threadsclone-project.onrender.com/api/message/${selectedConvo.userId}`,{
                     headers: {
                         'Authorization': JSON.parse(token)
                     },
